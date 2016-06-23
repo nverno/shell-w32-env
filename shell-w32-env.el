@@ -28,6 +28,7 @@
 ;;        comint-filename-completion))
 ;;
 ;;    ;; and create hook, here using company-shell backend as well
+;;
 ;;    (defun my-shell-hook ()
 ;;      (setq-local company-backends
 ;;        '((company-capf company-shell)))

@@ -28,10 +28,11 @@ In shell-mode hook, if using cmd.exe of cmdproxy.exe
            comint-filename-completion))
 
    ;; and create hook, here using company-shell backend as well
-   (defun my-shell-hook ()
-     (setq-local company-backends
-       '((company-capf company-shell)))
-     (shell-completion-vars))
+
+       (defun my-shell-hook ()
+         (setq-local company-backends
+           '((company-capf company-shell)))
+         (shell-completion-vars))
 
        (add-hook 'shell-mode-hook #'my-shell-hook)
 
