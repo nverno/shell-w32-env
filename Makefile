@@ -17,7 +17,7 @@ autoloads = ../loaddefs.el
 EL = $(wildcard *.el)
 ELC := $(EL:.el=.elc)
 
-.PHONY: all autoloads compile clean
+.PHONY: all $(autoloads) compile clean
 
 all: $(autoloads) compile README.md TAGS
 
